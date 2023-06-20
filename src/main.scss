@@ -1,0 +1,106 @@
+body {
+  color: black;
+}
+
+.drop-zone {
+  background-color: #eee;
+  margin-bottom: 10px;
+  padding: 10px;
+  min-height: 10px;
+}
+
+.drag-el {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.weekday {
+  min-height: 400px;
+  background-color: #BBD1EA;
+  border-radius: 8px;
+  margin: 0 4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.allocateYourTasks {
+  background-color: #152238;
+  border-radius: 8px;
+  min-height: 265px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+  h3 {
+    color: white;
+  }  
+}
+
+.gradient-pattern {
+  animation: gradient 4s ease infinite;
+  background-image: linear-gradient(135deg, #507DBC, #152238);
+  background-size: 400% 400%;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
+}
+
+.unallocatedTasksWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.card {
+  min-width: 190px !important;
+}
+
+.card-body {
+  padding-top: 0;
+}
+
+.btn-close {
+  align-self: flex-end;
+  padding: 10px;
+}
+
+.canvas {
+  height: 120% !important;
+}
+
+.btn {
+  padding: 10px 50px;
+  font-size: 18px;
+  margin-top: 0 !important;
+}
+
+select, .form-control {
+  background-color: gray !important;
+  color: white;
+  &:focus {
+    color: white;
+  }
+}
+
+form {
+  background: #1B1B19;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 20px;
+}

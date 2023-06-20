@@ -1,16 +1,19 @@
 <template>
   <MDBNavbar light bg="light" expand="lg" container>
-    <MDBNavbarBrand href="#">Navbar</MDBNavbarBrand>
+    <MDBNavbarBrand href="#">Home</MDBNavbarBrand>
     <MDBNavbarToggler target="#navbarNav" @click="collapse2 = !collapse2"></MDBNavbarToggler>
     <MDBCollapse id="navbarNav" v-model="collapse2">
       <MDBNavbarNav>
-        <MDBNavbarItem to="#" active> Home </MDBNavbarItem>
-        <MDBNavbarItem to="#"> Features </MDBNavbarItem>
-        <MDBNavbarItem to="#"> Pricing </MDBNavbarItem>
-        <MDBNavbarItem to="#" disabled> Disabled </MDBNavbarItem>
+        <MDBNavbarItem to="#"> 
+          <router-link to="/weekly-planner">Weekly Planner</router-link>
+        </MDBNavbarItem>
+        <MDBNavbarItem to="#">
+          <router-link to="/wiki">Wiki</router-link>
+        </MDBNavbarItem>
       </MDBNavbarNav>
     </MDBCollapse>
   </MDBNavbar>
+  <router-view />
 </template>
 
 <script>
