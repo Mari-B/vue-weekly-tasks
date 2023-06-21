@@ -133,7 +133,7 @@ export default {
     </MDBRow>    
   </MDBContainer>
   <MDBContainer class="my-4">
-    <MDBRow>
+    <MDBRow class="week">
       <MDBCol 
         class="weekday py-3"
         @drop="onTaskDrop($event, 1)"
